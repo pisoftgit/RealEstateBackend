@@ -82,9 +82,9 @@ import SerializedPropertiesPage from "./routes/RealtorAndProperties/Property/Man
 import ViewSerializedProperty from "./routes/RealtorAndProperties/Property/ViewSerializedProperty";
 import FillDetailsHouseVilla from "./routes/RealtorAndProperties/Property/HouseVillaFillDetails";
 import DayEnd from "./routes/DayEnd";
-import UpdateTower from "./routes/RealtorAndProperties/Property/TowerManage/updateTower";
 import AssignProperty from "./routes/RealtorAndProperties/UnderWritten/UnderWriteProperty";
 import EmployeeDocumentsManager from "./routes/AdministrativeSetUp/HR/GeneralSetup/EmployeeDocumentManager";
+import UpdateTower from "./routes/RealtorAndProperties/Property/TowerManage/updateTower";
 
 function App() {
     return (
