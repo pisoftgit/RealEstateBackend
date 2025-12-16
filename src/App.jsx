@@ -22,7 +22,6 @@ import LeadSourceManager from "./routes/AdministrativeSetUp/crm/LeadGeneration";
 import DepartmentManager from "./routes/AdministrativeSetUp/HR/GeneralSetup/DepartmentManager";
 import DesignationManager from "./routes/AdministrativeSetUp/HR/GeneralSetup/DesignationManager";
 import EmployeeTypeManager from "./routes/AdministrativeSetUp/HR/GeneralSetup/EmployeeTypeManger";
-import EmployeeDocumentsManager from "./routes/AdministrativeSetUp/HR/GeneralSetup/employeeDocumentManager";
 import AttendanceNotationManager from "./routes/AdministrativeSetUp/HR/GeneralSetup/AttendenceNotationManager";
 import Duration from "./routes/AdministrativeSetUp/HR/GeneralSetup/Duration";
 import RelievingReasonManager from "./routes/AdministrativeSetUp/HR/GeneralSetup/RelievingReasons";
@@ -85,6 +84,7 @@ import FillDetailsHouseVilla from "./routes/Realtor and Properties/Property/Hous
 import DayEnd from "./routes/DayEnd";
 import UpdateTower from "./routes/Realtor and Properties/Property/TowerManage/updateTower";
 import AssignProperty from "./routes/Realtor and Properties/UnderWritten/UnderWriteProperty";
+import EmployeeDocumentsManager from "./routes/AdministrativeSetUp/HR/GeneralSetup/EmployeeDocumentManager";
 
 function App() {
     return (

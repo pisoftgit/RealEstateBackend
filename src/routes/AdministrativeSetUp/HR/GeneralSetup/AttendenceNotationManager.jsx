@@ -111,7 +111,7 @@ const AttendanceNotation = () => {
 
   return (
     <motion.div
-      className="min-h-screen p-5 font-dm bg-gray-50 dark:bg-gray-900 transition-colors duration-500 font-dm"
+      className="min-h-screen p-5 font-dm bg-gray-50 dark:bg-gray-900 transition-colors duration-500"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
