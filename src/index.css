@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'DMSans';
+    src: url('/font/DMSans_24pt-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply [scrollbar-color:_#cbd5e1_transparent] dark:[scrollbar-color:_#334155_transparent];
+    }
+}
+
+@layer components {
+    .sidebar-group {
+        @apply flex w-full flex-col gap-y-2;
+    }
+
+    .sidebar-group-title {
+        @apply overflow-hidden text-ellipsis text-base font-bold text-blue-900 dark:text-slate-400;
+    }
+
+    .sidebar-item {
+        @apply flex h-[35px] w-full flex-shrink-0 items-center gap-x-2 rounded-lg p-2 text-sm font-medium text-slate-900 transition-colors hover:bg-blue-50 dark:text-slate-50 dark:hover:bg-blue-700;
+        &.active {
+            @apply bg-blue-950 text-slate-50 dark:bg-blue-950 dark:border-white border-2;
+        }
+    }
+
+    .title {
+        @apply text-3xl font-semibold text-slate-900 transition-colors dark:text-slate-50;
+    }
+
+    .btn-ghost {
+        @apply flex h-10 flex-shrink-0 items-center justify-center gap-x-2 rounded-lg p-2 text-slate-400 transition-colors hover:bg-blue-50 hover:text-slate-500 dark:hover:bg-blue-950 dark:hover:text-slate-300;
+    }
+
+    .link {
+        @apply text-base font-medium text-slate-900 transition-colors hover:underline dark:text-slate-50;
+    }
+
+    .input {
+        @apply hidden h-10 flex-shrink-0 items-center gap-x-2 rounded-lg border border-slate-300 px-2 text-base text-slate-900 transition-colors has-[input:focus]:border-blue-500 md:flex md:w-auto lg:w-80 dark:border-slate-700 dark:text-slate-50 dark:focus:border-blue-600;
+    }
+
+    .card {
+        @apply flex flex-col gap-y-4 rounded-lg border border-slate-300 bg-white p-4 transition-colors dark:border-slate-700 dark:bg-slate-900;
+    }
+
+    .card-header {
+        @apply flex items-center gap-x-2;
+    }
+
+    .card-title {
+        @apply font-medium text-slate-900 transition-colors dark:text-slate-50;
+    }
+
+    .card-body {
+        @apply flex flex-col gap-y-2 rounded-lg p-4;
+    }
+
+    .table {
+        @apply h-full w-full text-slate-900 dark:text-slate-50;
+    }
+
+    .table-header {
+        @apply sticky top-0 bg-slate-200 transition-[background] dark:bg-slate-800;
+    }
+
+    .table-row {
+        @apply border-b border-slate-300 transition-colors last:border-none dark:border-slate-700;
+    }
+
+    .table-head {
+        @apply h-12 px-4 text-start;
+    }
+
+    .table-cell {
+        @apply w-fit whitespace-nowrap p-4 font-medium;
+    }
+}
+
+/* Make toast wider */
+.my-toast-container .Toastify__toast {
+  width: 600px;          /* Increase width */
+  max-width: 90%;        /* Prevent overflow on small screens */
+  margin: 0 auto;        /* Center horizontally */
+  text-align: left;      /* Keep multiline readable */
+  white-space: pre-wrap; /* Allow multi-line backend messages */
+  font-size: 15px;
+  color: black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.my-toast-container .Toastify__toast-body {
+  white-space: pre-wrap !important;
+}
