@@ -48,7 +48,7 @@ import ConfigureFurnishingStatus from "./routes/AdministrativeSetUp/Property/Fur
 import ConfigureFlatStructure from "./routes/AdministrativeSetUp/Property/FlatStructure";
 import ConfigureFlatHouseStructure from "./routes/AdministrativeSetUp/Property/FlatStructureType";
 import ConfigureRoomType from "./routes/AdministrativeSetUp/Property/RoomType";
-import ConfigureParkingType from "./routes/AdministrativeSetUp/Property/pARKINGtYPE.JSX";
+import ConfigureParkingType from "./routes/AdministrativeSetUp/Property/ParkingType";
 import ConfigureOwnershipType from "./routes/AdministrativeSetUp/Property/OwnershipType";
 import ConfigureShopCategory from "./routes/AdministrativeSetUp/Property/ShowroomCategory";
 import ConfigureMeasurementType from "./routes/AdministrativeSetUp/Property/MeasurementType";
