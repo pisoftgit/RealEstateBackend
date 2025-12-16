@@ -84,7 +84,7 @@ import FillDetailsHouseVilla from "./routes/RealtorAndProperties/Property/HouseV
 import DayEnd from "./routes/DayEnd";
 import AssignProperty from "./routes/RealtorAndProperties/UnderWritten/UnderWriteProperty";
 import EmployeeDocumentsManager from "./routes/AdministrativeSetUp/HR/GeneralSetup/EmployeeDocumentManager";
-import UpdateTower from "./routes/RealtorAndProperties/Property/TowerManage/updateTower";
+import UpdateTower from "./routes/RealtorAndProperties/Property/TowerManage/UpdateTower";
 
 function App() {
     return (
