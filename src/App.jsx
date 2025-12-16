@@ -92,8 +92,8 @@ function App() {
             <ThemeProvider storageKey="theme">
                 <BrowserRouter>
                     <Routes>
-                        {/* <Route path="/login" element={<LoginPage />} /> */}
-                        {/* <Route element={<PrivateRoute />}> */}
+                        <Route path="/login" element={<LoginPage />} />
+                        <Route element={<PrivateRoute />}>
                             <Route path="/" element={<Layout />}>
                                 <Route index element={<DashboardPage />} />
                                 <Route path="/MyProfile" element={<ProfilePage />} />
@@ -242,7 +242,7 @@ function App() {
                                 <Route path="/ManageUsers" element={<UserSearchManage />} />
                                 <Route path="/DayEnd" element={<DayEnd />} />
                             </Route>
-                        {/* </Route> */}
+                        </Route>
 
                         <Route path="*" element={<h1>404: Not Found</h1>} />
                     </Routes>
